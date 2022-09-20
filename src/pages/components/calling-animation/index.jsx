@@ -2,6 +2,8 @@ import {CallingAnimation} from '../../../components/CallingAnimation'
 
 export default function index() {
   return (
-    <CallingAnimation/>
+    <div className="flex justify-center items-center w-full h-screen">
+      <CallingAnimation/>
+    </div>
   )
 }
