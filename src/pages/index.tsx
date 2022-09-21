@@ -4,7 +4,7 @@ import { Activity } from "phosphor-react";
 
 const Home: NextPage = () => {
   return (
-    <div className="p-10">
+    <div className="p-10 text-black">
       <h1>Homepage</h1>
     </div>
   );
