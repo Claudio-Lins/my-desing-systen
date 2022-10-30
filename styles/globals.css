@@ -24,3 +24,42 @@ button {
   opacity: 0.6;
   
 }
+
+/* InputTextBox */
+
+.md-textbox { position: relative;}
+.md-textbox > input {
+  height: 56px;
+  width: 100%;
+  max-width: 400px;
+  padding-left: 16px;
+  border: 2 solid #888888;
+  border-radius: 8px;
+  background: transparent;
+  color: #000;
+}
+.md-textbox :is(label, span) {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  pointer-events: none;
+  color: #888888;
+  transition: 0.3s;
+}
+.md-textbox > label {
+  left: 10px;
+  translate: 0 -50%;
+  padding: 4px 8px;
+}
+.md-textbox > span {
+  right: 16px;
+  font-size: 28px;
+}
+.md-textbox > :is(input:focus, .has-value) {
+  border-color: #8f44fd;
+}
+.md-textbox > :is(input:focus, .has-value) ~ label {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  translate: 0 -46px;
+}
